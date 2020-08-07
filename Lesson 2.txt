@@ -1,0 +1,121 @@
+Write a Python program to find the sum of digits of a given number.
+
+# Write a Python program to find the sum of digits of a given number.
+num = int(input("Please enter your Number: "))
+Sum = 0
+while num > 0:
+    reminder = num % 10
+    Sum = Sum + reminder
+    num = num // 10
+print("Sum of the digits of given number is: ", Sum)
+
+
+Write a Python program to check whether the given year is leap year or not.
+https://www.tutorialgateway.org/python-program-to-check-leap-year/
+
+
+Write a Python program to find and display the maximum of three given numbers.
+https://www.geeksforgeeks.org/python-program-maximum-three/
+
+Write a Python program to check the given number is prime number or not.
+https://www.geeksforgeeks.org/python-program-to-check-whether-a-number-is-prime-or-not/
+
+
+Write a Python program to print first n Fibonacci numbers.
+https://www.geeksforgeeks.org/program-to-print-first-n-fibonacci-numbers/
+
+=============
+#Python Program to Print Even Numbers from 1 to N
+
+num = int(input(" Enter the Max Number : "))
+ 
+for number in range(1, num+1):
+    if(number % 2 == 0):
+          print(number)
+    number = number + 1
+
+
+#Python Program to find Sum of Elements in a List
+list = [6, 5, 3, 8, 4, 2, 5]
+sum= 0
+for x in range (0, 6)
+	sum=sum+list[x]
+print (sum)
+
+#or we can use this way 
+for x in numbers:
+      sum = sum+x
+print(sum)
+
+
+# Python Program to Check Leap Year using If Statement
+# MyNote: Leap year is divisible by 4 and not end with 00 or if end 00 then divisible by 400
+year = int(input("Please Enter the Year: "))
+if (year % 400 == 0) or ((year % 4 == 0) and (year % 100 != 0)):
+    print(year, "is a Leap Year")
+else:
+    print(year, "is NOT the Leap Year")
+
+
+# Write a Python program to find and display the maximum of three given numbers.
+
+a = int(input("Please enter your first number: "))
+b = int(input("Please enter your second number: "))
+c = int(input("Please enter your third number: "))
+
+if (a >= b) and (a >= c):
+    largest = a
+
+elif (b >= a) and (b >= c):
+    largest = b
+else:
+    largest = c
+
+print("the max number is: ", largest)
+
+
+
+# Write a Python program to check the given number is prime number or not.
+# MyNote: prime number should be bigger then 1- make loop from 2 to number to see any number between is divisible
+# MyNote: stop the loop as soon as find is divisible to any number between
+num = int(input("Please enter your number to check if it is prime or not: "))
+
+# If given number is greater than 1
+if num > 1:
+    for i in range(2, num):
+
+        # If num is divisible by any number between
+        # 2 and n / 2, it is not prime
+        if (num % i) == 0:
+            print(num, "is not a prime number")
+            break
+    else:
+        print(num, "is a prime number")
+
+else:
+    print(num, "is not a prime number")
+
+
+# An organization has decided to provide salary hike to its employees based on their job level. Employees can be in job levels 3 , 4 or 5. Hike percentage based on job levels are given below:
+
+In case of invalid job level, consider hike percentage to be 0.
+
+Given the current salary and job level, write a Python program to find and display the new salary of an employee.
+
+salary = float(input("Enter the salary: "))
+level = int(input("Enter the job level: "))
+if level == 3:
+    print("LEVEL 3 \nupdated salary is:  " + str(salary + (salary * 0.15)))
+elif level == 4:
+    print("LEVEL 4 \nupdated salary is:  " + str(salary + (salary * 0.07)))
+elif level == 5:
+    print("LEVEL 5 \nupdated salary is:  " + str(salary + (salary * 0.05)))
+else:
+    print("INVALID LEVEL! \nThe salary will be: " + str(salary))
+
+
+
+# Write a Python program to print first n Fibonacci numbers
+
+
+

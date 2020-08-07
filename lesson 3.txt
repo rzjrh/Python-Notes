@@ -1,0 +1,78 @@
+# Write a python function, find_square() that accepts an integer number, n and returns the square of n. 
+# Invoke the function and display the square of the number. 
+def square(a):
+    return "The square is: ", (a * a)
+
+
+num = int(input("Please enter your number: "))
+print(square(num))
+
+
+
+#Write a python function, find_sum() that accepts an integer, n and returns the sum of first, n numbers. 
+#Invoke the function and display the sum of first n numbers.
+def sumCalc(a):
+    total = 0
+    for i in range(1, a + 1):
+        total += i
+    print("The Sum of Numbers is: ", total)
+
+
+number = int(input("Please Enter your Number: "))
+sumCalc(number)
+
+
+# Write a Python function factorial(num) which returns the factorial of a given number.
+def factorial(a):
+    if a < 0:
+        return "ERROR- your number cannot be less than zero!"
+    elif a == 0:
+        return "The Factorial is 1"
+    else:
+        fctl = 1
+        for i in range(1, a+1):
+            fctl *= i
+        return "the Factorial is: ", fctl
+
+
+n = int(input("Input a number to compute the factorial : "))
+print(factorial(n))
+
+
+# Write a Python Function is_palindrome(num) 
+# that accepts an integer num as argument and returns True if the num is palindrome else returns false. 
+# Invoke the function and based on return value print the output
+def palindrom_check(num):
+    reverse = 0
+    temp = num
+    while temp > 0:
+        reminder = temp % 10
+        reverse = (reverse * 10) + reminder
+        temp = temp // 10
+    print("Reverse is = %d" % reverse)
+    if num == reverse:
+        print("%d is a Palindrome Number" % num)
+    else:
+        print("%d is not a Palindrome Number" % num)
+
+
+number = int(input("Please Enter any Number: "))
+palindrom_check(number)
+
+
+# Write a Python function right_shift(num, n) 
+# that takes two numbers num and n as  arguments and returns value of the integer num rotated to the right by n positions. 
+# Assume both the numbers are unsigned. 
+# Invoke the function and print the return value.
+def right_shift(num, n):
+    a = bin(num)
+    print("The binary number is: ", a)
+    b = (num >> n)
+    print("after", n, "binary shift, the new number is: ", b)
+
+
+number = int(input("Please enter your number: "))
+shift = int(input("enter the number of shift: "))
+right_shift(number, shift)
+
+

@@ -1,0 +1,152 @@
+
+
+if num > 0:
+    print("Positive number")
+elif num == 0:
+    print("Zero")
+else:
+    print("Negative number")
+
+num = input("enter your month number")
+if (num == 1):
+     print("January")
+elif (num == 2):
+     print("Feb.")
+elif (num == 3):
+     print("March")
+elif (num == 4):
+     print("April")
+elif (num == 5):
+     print("May")
+elif (num == 6):
+     print("June")
+elif (num == 7):
+     print("July")
+elif (num == 8):
+     print("Aug.")
+elif (num == 9):
+     print("Sep")
+elif (num == 10):
+     print("Oct")
+elif (num == 11):
+     print("Oct")
+elif (num == 12):
+     print("Dec")
+else 
+     print("INVALID NUMBER")
+
+
+
+a=80
+b=40
+c=30
+if(a>b):
+    if(a>c):
+        print(a)
+    else:
+        print(c)
+elif(b>c):
+    print(b)
+else:
+    print(c)
+
+
+Write a python program that displays a message as follows for a given number:
+If it is a multiple of three, display "Zip"
+If it is a multiple of five, display "Zap".
+If it is a multiple of both three and five, display "Zoom".
+If it does not satisfy any of the above given conditions, display "Invalid".
+
+a=input("Please enter any number:")
+
+#if multiple of 3
+if x%3==0:
+	#nested if (if multiple of 3 and 5)
+	if x%5==0:
+		print("Zoom")
+	else:
+		print("Zip")
+elif x%5==0:
+	print("Zap")
+else:
+	print("Invalid")
+
+
+
+a=input("Please enter any number:")
+
+#if multiple of 3
+if a%3==0:
+	#nested if (if multiple of 3 and 5)
+	if a%5==0:
+		print("Zoom")
+		print "The " ,a, "is multiple of both 3 and 5"
+		
+	else:
+		print("Zip")
+		print "The " ,a, "is multiple of both 3 only"
+elif a%5==0:
+	print("Zap")
+	print "The " ,a, "is multiple of both 5 only"
+else:
+	print("Invalid")
+	print "The number " ,a, "is NOT multiple of 3 nor 5"
+
+
+
+num=15
+if(num%3==0 and num%5==0):
+     message="Zoom"
+elif(num%5==0):
+     message="Zap"
+elif(num%3==0):
+     message="Zip"
+else:
+     message="Invalid"
+print message
+
+
+
+1. Program to Display greatest of 3 numbers
+# And displays an appropriate message
+2. Program to compute Area of Rectangle
+hint: Area = Length * breadth
+3. Program to convert Farhenhiet to Celcius 
+
+#1
+a= input("please enter your first number")
+b= input("please enter your second number")
+c= input("please enter your third number")
+
+if (a==b) and (a==c):
+	greatN= "all numbers are equal"
+if a>= b and a>= c):
+	greatN = a
+elif (b >= a) and (b >= c):
+	greatN = b
+else:
+	greatN = c
+
+print("The largest number is", greatN)
+
+
+
+
+#2
+
+w= input("please enter the width of the rectangle in feet: ")
+l= input("please enter the length of the rectangle in feet: ")
+area = (w*l)
+print "the area is: " ,area, " sq/ft"
+
+
+#3
+#formula when I search is: [(F-32)*(5/9)]
+f= input("please enter the temprature in farenhite: ")
+eq1= (f-32)
+eq2= (1.8)
+c=(eq1*eq2)
+print "the temprature in celcius is: " , c
+
+
+
